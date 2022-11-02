@@ -1,0 +1,16 @@
+package org.spring.desafio.cloudparking.controller;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ParkingControllerTest {
+
+    @Test
+    void findAll() {
+    }
+
+    @Test
+    void create() {
+    }
+}

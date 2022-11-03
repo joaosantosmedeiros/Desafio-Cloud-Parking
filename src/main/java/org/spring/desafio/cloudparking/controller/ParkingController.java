@@ -60,10 +60,11 @@ public class ParkingController {
     }
 
     @PostMapping("/{id}")
-    public ResponseEntity<ParkingDTO> exit (@PathVariable(value = "id") String id){
+    public ResponseEntity<ParkingDTO> checkout (@PathVariable(value = "id") String id){
         Parking parking = parkingService.findById(id);
         if(parking == null) throw new ParkingNotFoundException(id);
-        parking = parkingService.exit(id);
+
+        parking = parkingService.checkout(id);
         return ResponseEntity.ok(parkingMapper.toParkingDTO(parking));
     }
 }

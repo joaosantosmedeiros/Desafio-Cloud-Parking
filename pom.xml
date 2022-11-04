@@ -44,6 +44,12 @@
 			<version>1.6.12</version>
 		</dependency>
 
+		<!--Segurança-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 		<!--Testes-->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
